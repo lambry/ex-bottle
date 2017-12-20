@@ -1,0 +1,136 @@
+/* Global */
+html {
+    color: #404040;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Sections */
+header {
+    min-height: 15vh;
+}
+main {
+    min-height: 75vh;
+}
+footer {
+    font-size: 0.75rem;
+    min-height: 10vh;
+}
+.container {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Typography */
+a {
+    color: #3f5470;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.logo {
+    font-size: 1.25rem;
+}
+.button {
+    padding: 0.7rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.75rem;
+    background-color: #3f5470;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.025);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+.button:hover {
+    color: #fff;
+    background-color: #587090;
+}
+.button-alert {
+    background-color: #E4572E;
+}
+.button-alert:hover {
+    background-color: #bf401b;
+}
+
+/* Forms */
+.form {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+.form-field {
+    margin-bottom: 2rem;
+}
+.form-edit {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.form-delete {
+    padding: 0 2rem 2rem;
+}
+.form .button {
+    border-color: #fff;
+}
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+input, textarea {
+    width: 100%;
+    font-style: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+textarea {
+    min-height: 10rem;
+}
+
+/* Posts */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.posts .post {
+    flex: 1 1 33%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.15) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}
+.posts .post:hover {
+    background-color: #587090;
+}
+.posts .post:nth-child(3n) {
+    flex: 1 2 66%;
+}
+
+/* Post */
+.post {
+    padding: 2rem;
+    color: #fff;
+    background-color: #3f5470;
+    transition: background-color 0.2s ease;
+}
+.post-title {
+    margin-top: 0;
+}
+.post-intro,
+.post-content {
+    margin-bottom: 0;
+}
+.post-edit {
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+.post a {
+    color: #fff;
+}
